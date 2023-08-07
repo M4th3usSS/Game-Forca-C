@@ -28,12 +28,12 @@ manipulção de arquivos. Eu não priorizei o uso de variáveis globais, usei pontei
 Os laços encadeados assim como a estruturação de códigos pode gerar dúvidas, a critério de conhecimento é uma boa prática debuggar o código para entender melhor o que eles estão fazendo;
 No trabalho com arrays, tenha cuidado com os dados e sua tipagem;
 
-**FUNÇÃO sprintf(char[],string):**
+## FUNÇÃO sprintf(char[],string)
 
 A função sprintf recebe no primeiro parâmetro um array de char, no segundo parâmetro você deve entrar com a string que deseja armazenar nesse array;
 Essa função irá percorrer toda a string que você colocou no segundo argumento, armazenando cada char da string em sua respectiva posição no array de char;
 Se a string é menor que o tamanho do vetor de char, será atribuido um '\0' no char sucessor ao último, isso garante que ela irá armazenar no array somente os char necessários;
-Para imprimir o array de char você deve usar o %s, passando como argumento o array de char que deseja imprimir;
+Para imprimir o array de char você deve usar o %s, passando como argumento o array de char que deseja imprimir.
 
 Exemplo: 
 
@@ -60,7 +60,7 @@ palavra_secreta[9 ... 19] // = LIXO DE MEMÓRIA ou VALOR DE INICIALIZAÇÃO
 
 Para mais informações sobre a função sprintf() consulte a [documentação do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
 
-**FUNÇÃO strlen(char[])**;
+## FUNÇÃO strlen(char[])**
 
 A função strlen(char[]) recebe como parâmetro um array de char e retorna seu tamanho.
 
@@ -86,20 +86,20 @@ exemplo[3]
 ...
 exemplo[N-1]
 ```
-Para mais informações sobre a função strlen() consulte a [documentação do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170)
+Para mais informações sobre a função strlen() consulte a [documentação do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
 
 
-Criar funções:
+## Criar funções
 
-    - Passagens por cópia;
-    - Passagem por endereço de memória - Ponteiros 
+    - Passagens por cópia.
+    - Passagem por endereço de memória - Ponteiros.
 
-    Uma outra alternativa para esse código seria usar variáveis globais, porém, a critério de conhecimento e consulta vou deixar da forma que está;
+    Uma outra alternativa para esse código seria usar variáveis globais, porém, a critério de conhecimento e consulta vou deixar da forma que está.
 
-Função fopen, fclose,fscanf.:
+## Função fopen, fclose,fscanf
 
     Essas são funções de manipulação de arquivos.
 
-    fopen - Abre um arquivo do diretório atual;
-    fclose - Fecha o arquivo 
-    fscanf - Faz a leitura sequencial do arquivo(linha a linha);
+    fopen - Abre um arquivo do diretório atual.
+    fclose - Fecha o arquivo.
+    fscanf - Faz a leitura sequencial do arquivo(linha a linha).
