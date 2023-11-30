@@ -22,12 +22,6 @@ manipulção de arquivos. Eu não priorizei o uso de variáveis globais, usei po
 - Funções fopen(), fclose(), fscanf() , fprintf() , fseek();
 - if ternário;
 
-
-## OBS.:
-
-Os laços encadeados assim como a estruturação de códigos pode gerar dúvidas, a critério de conhecimento é uma boa prática debuggar o código para entender melhor o que eles estão fazendo;
-No trabalho com arrays, tenha cuidado com os dados e sua tipagem;
-
 ## FUNÇÃO sprintf(char[],string)
 
 A função sprintf recebe no primeiro parâmetro um array de char, no segundo parâmetro você deve entrar com a string que deseja armazenar nesse array;
