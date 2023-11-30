@@ -1,39 +1,39 @@
-# Projeto de introdução a C
+# Projeto de introduÃ§Ã£o a C
 
-Esse é o meu segundo projeto de introdução a linguagem C. Apesar de simples, aqui explorei mais recursos da linguagem, como laços encadeados, ponteiros, funções e 
-manipulção de arquivos. Eu não priorizei o uso de variáveis globais, usei ponteiros e passagem por cópia para desenvolver mais habilidades;
+Esse Ã© o meu segundo projeto de introduÃ§Ã£o a linguagem C. Apesar de simples, aqui explorei mais recursos da linguagem, como laÃ§os encadeados, ponteiros, funÃ§Ãµes e 
+manipulÃ§Ã£o de arquivos. Eu nÃ£o priorizei o uso de variÃ¡veis globais, usei ponteiros e passagem por cÃ³pia.
 
 
-## Tópicos das anotações.:
+## TÃ³picos das anotaÃ§Ãµes.:
 
-- Função sprintf();
-- Função strlen();
-- Função scanf() e Buffer de memória;
+- FunÃ§Ã£o sprintf();
+- FunÃ§Ã£o strlen();
+- FunÃ§Ã£o scanf() e Buffer de memÃ³ria;
 - Varredura de um array;
 - Loops encadeados;
-- Criar Funções;
-- Parâmetros;
-- Passagem de parâmetros por cópia;
-- Passagem de parâmetros por ponteiro;
-- Variáveis globais;
-- Retorno de Funções;
+- Criar FunÃ§Ãµes;
+- ParÃ¢metros;
+- Passagem de parÃ¢metros por cÃ³pia;
+- Passagem de parÃ¢metros por ponteiro;
+- VariÃ¡veis globais;
+- Retorno de FunÃ§Ãµes;
 - Header files;
 - Leitura e escrita em um arquivo;
-- Funções fopen(), fclose(), fscanf() , fprintf() , fseek();
-- if ternário;
+- FunÃ§Ãµes fopen(), fclose(), fscanf() , fprintf() , fseek();
+- if ternÃ¡rio;
 
 
 ## OBS.:
 
-Os laços encadeados assim como a estruturação de códigos pode gerar dúvidas, a critério de conhecimento é uma boa prática debuggar o código para entender melhor o que eles estão fazendo;
+Os laÃ§os encadeados assim como a estruturaÃ§Ã£o de cÃ³digos pode gerar dÃºvidas, a critÃ©rio de conhecimento Ã© uma boa prÃ¡tica debuggar o cÃ³digo para entender melhor o que eles estÃ£o fazendo;
 No trabalho com arrays, tenha cuidado com os dados e sua tipagem;
 
-## FUNÇÃO sprintf(char[],string)
+## FUNÃ‡ÃƒO sprintf(char[],string)
 
-A função sprintf recebe no primeiro parâmetro um array de char, no segundo parâmetro você deve entrar com a string que deseja armazenar nesse array;
-Essa função irá percorrer toda a string que você colocou no segundo argumento, armazenando cada char da string em sua respectiva posição no array de char;
-Se a string é menor que o tamanho do vetor de char, será atribuido um '\0' no char sucessor ao último, isso garante que ela irá armazenar no array somente os char necessários;
-Para imprimir o array de char você deve usar o %s, passando como argumento o array de char que deseja imprimir.
+A funÃ§Ã£o sprintf recebe no primeiro parÃ¢metro um array de char, no segundo parÃ¢metro vocÃª deve entrar com a string que deseja armazenar nesse array;
+Essa funÃ§Ã£o irÃ¡ percorrer toda a string que vocÃª colocou no segundo argumento, armazenando cada char da string em sua respectiva posiÃ§Ã£o no array de char;
+Se a string Ã© menor que o tamanho do vetor de char, serÃ¡ atribuido um '\0' no char sucessor ao Ãºltimo, isso garante que ela irÃ¡ armazenar no array somente os char necessÃ¡rios;
+Para imprimir o array de char vocÃª deve usar o %s, passando como argumento o array de char que deseja imprimir.
 
 Exemplo: 
 
@@ -42,7 +42,7 @@ char palavra_secreta[10];
 sprintf(palavra_secreta,"MELANCIA");
 printf("%s",palavra_secreta);
 
-/*Temos o seguinte array: char palavra_secreta[10], nele será armazenado a palavra "MELANCIA", os valores de cada posicão desse array serão:
+/*Temos o seguinte array: char palavra_secreta[10], nele serÃ¡ armazenado a palavra "MELANCIA", os valores de cada posicÃ£o desse array serÃ£o:
 
 palavra_secreta[0] = 'M'
 palavra_secreta[1] = 'E'
@@ -53,16 +53,16 @@ palavra_secreta[5] = 'C'
 palavra_secreta[6] = 'I'
 palavra_secreta[7] = 'A'
 palavra_secreta[8] = '\0'
-palavra_secreta[9 ... 19] // = LIXO DE MEMÓRIA ou VALOR DE INICIALIZAÇÃO
+palavra_secreta[9 ... 19] // = LIXO DE MEMÃ“RIA ou VALOR DE INICIALIZAÃ‡ÃƒO
 */
 
 ```
 
-Para mais informações sobre a função sprintf() consulte a [documentação do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
+Para mais informaÃ§Ãµes sobre a funÃ§Ã£o sprintf() consulte a [documentaÃ§Ã£o do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
 
-## FUNÇÃO strlen(char[])**
+## FUNÃ‡ÃƒO strlen(char[])**
 
-A função strlen(char[]) recebe como parâmetro um array de char e retorna seu tamanho.
+A funÃ§Ã£o strlen(char[]) recebe como parÃ¢metro um array de char e retorna seu tamanho.
 
 Exemplo:
 
@@ -76,7 +76,7 @@ printf("%d", tamanho_palavra_secreta);
 //8
 ```
 
-OBS.: Lembre-se que os índices de um array sempre começam em 0, então para um array exemplo[N], seus índices são:
+OBS.: Lembre-se que os Ã­ndices de um array sempre comeÃ§am em 0, entÃ£o para um array exemplo[N], seus Ã­ndices sÃ£o:
 
 ```C
 exemplo[0]
@@ -86,20 +86,20 @@ exemplo[3]
 ...
 exemplo[N-1]
 ```
-Para mais informações sobre a função strlen() consulte a [documentação do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
+Para mais informaÃ§Ãµes sobre a funÃ§Ã£o strlen() consulte a [documentaÃ§Ã£o do C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170).
 
 
-## Criar funções
+## Criar funÃ§Ãµes
 
-    - Passagens por cópia.
-    - Passagem por endereço de memória - Ponteiros.
+    - Passagens por cÃ³pia.
+    - Passagem por endereÃ§o de memÃ³ria - Ponteiros.
 
-    Uma outra alternativa para esse código seria usar variáveis globais, porém, a critério de conhecimento e consulta vou deixar da forma que está.
+    Uma outra alternativa para esse cÃ³digo seria usar variÃ¡veis globais, porÃ©m, a critÃ©rio de conhecimento e consulta vou deixar da forma que estÃ¡.
 
-## Função fopen, fclose,fscanf
+## FunÃ§Ã£o fopen, fclose,fscanf
 
-    Essas são funções de manipulação de arquivos.
+    Essas sÃ£o funÃ§Ãµes de manipulaÃ§Ã£o de arquivos.
 
-    fopen - Abre um arquivo do diretório atual.
+    fopen - Abre um arquivo do diretÃ³rio atual.
     fclose - Fecha o arquivo.
     fscanf - Faz a leitura sequencial do arquivo(linha a linha).
